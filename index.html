@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Website resmi kelas M program studi S1 Teknologi Informasi Universitas Negeri Yogyakarta (UNY). Profil, galeri momen kebersamaan, struktur organisasi, dan forum interaktif.">
+    <meta name="theme-color" content="#145346">
+    
+    <title>Teknologi Informasi Kelas M — Universitas Negeri Yogyakarta</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans (Elegan, Modern & Luwes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Stylesheet Utama (Dual-Tone Design System) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         HEADER & NAVIGASI
+         ========================================= -->
+    <header>
+        <nav data-aos="fade-down" data-aos-duration="800">
+            <a href="#hero" class="brand-wrapper">
+                <div class="brand-logo-badge">M</div>
+                <div class="brand-text">
+                    <span class="brand-title">Kelas M</span>
+                    <span class="brand-sub">TI UNY 2026</span>
+                </div>
+            </a>
+
+            <!-- Menu Tautan Navigasi -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pictures">Galeri</a></li>
+                <li><a href="#sosmed">Sosial Media</a></li>
+                <li><a href="#struktur">Struktur</a></li>
+                <li><a href="#komentar">Komentar & Chat</a></li>
+                <li><a href="#game">Mini Game</a></li>
+            </ul>
+
+            <!-- Tombol Aksi & Mode Gelap -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode" title="Ganti Tema">🌙</button>
+                <a href="#komentar" class="btn-nav-action">💬 Forum Kelas</a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =========================================
+         KONTEN UTAMA
+         ========================================= -->
+    <main>
+        <!-- SECTION 1: HERO (ANIMASI KURSOR & MESH INTERAKTIF) -->
+        <section id="hero" class="section-full">
+            <!-- Canvas Partikel Interaktif yang Bergerak Mengikuti Kursor -->
+            <canvas id="hero-canvas"></canvas>
+            <!-- Spotlight Mengikuti Kursor -->
+            <div id="hero-spotlight"></div>
+
+            <div class="hero-inner" data-aos="zoom-out" data-aos-duration="1000">
+                <div class="hero-tagline-wrap">
+                    <span class="pulse-dot"></span>
+                    <span class="hero-tagline">Website Resmi Kelas M • S1 Teknologi Informasi</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    TEKNOLOGI<br><span class="highlight">INFORMASI</span>
+                </h1>
+                
+                <p class="hero-desc">
+                    Software Engineering • Universitas Negeri Yogyakarta. Wadah sinergi, eksplorasi teknologi modern, dan kebersamaan tanpa batas mahasiswa Kelas M.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#tentang" class="btn-primary">
+                        Jelajahi Profil
+                        <span>↓</span>
+                    </a>
+                    <a href="#komentar" class="btn-secondary">
+                        Tulis Pendapat & Komentar
+                        <span>💬</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Petunjuk Scroll Mouse -->
+            <a href="#tentang" class="hero-indicator" aria-label="Gulir ke bawah">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- SECTION 2: TENTANG KELAS -->
+        <section id="tentang">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Tentang Kami</span>
+                <h2 class="section-title">Dedikasi, Solidaritas & Inovasi</h2>
+                <p class="section-subtitle">
+                    Mengenal lebih dekat lingkungan belajar dan dinamika mahasiswa S1 Teknologi Informasi Kelas M UNY.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Narasi Kiri -->
+                <div class="about-narrative" data-aos="fade-right" data-aos-delay="200">
+                    <p>
+                        Selamat datang di portal resmi <strong>Teknologi Informasi Kelas M</strong> Universitas Negeri Yogyakarta. Kami adalah sekumpulan calon software engineer, pengembang sistem, dan inovator digital yang berdedikasi tinggi, kompak, serta siap menjawab tantangan revolusi industri teknologi di masa depan.
+                    </p>
+                    <p>
+                        Dengan semangat kolaborasi tim dan kreativitas tanpa henti, kami terus mengasah keahlian pemrograman, logika komputasi, dan kecerdasan analitis untuk menghasilkan karya yang bermanfaat nyata bagi masyarakat.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="feature-icon-box">✓</div>
+                            <div class="feature-text">
+                                <h4>Creative Software Engineering</h4>
+                                <p>Fokus mendalam pada rekayasa perangkat lunak modern dan arsitektur sistem.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-icon-box">★</div>
+                            <div class="feature-text">
+                                <h4>Kolaboratif & Kompak</h4>
+                                <p>Saling mendukung dalam kegiatan akademik, praktikum, dan proyek pengembangan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu Statistik Kanan -->
+                <div class="stats-card-container" data-aos="fade-left" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Mahasiswi</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">31</div>
+                        <div class="stat-label">Mahasiswa</div>
+                    </div>
+                    <div class="stat-card featured">
+                        <div class="stat-number">46</div>
+                        <div class="stat-label">Total Mahasiswa Kelas M</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2.5: GALERI MOMEN (OUR PICTURES) -->
+        <section id="pictures">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Momen Kebersamaan</span>
+                <h2 class="section-title">Galeri Kelas M</h2>
+                <p class="section-subtitle">
+                    Koleksi potret dokumentasi kegiatan belajar, diskusi proyek, dan kehangatan persahabatan kami di kampus UNY.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/1.jpeg" alt="Mahasiswa TI Kelas M sedang berdiskusi kelompok" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Google Gemini Kampus</div>
+                        <div class="gallery-meta">Momen kolaborasi perkuliahan</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="img/2.jpeg" alt="Kegiatan belajar mahasiswa TI Kelas M di kampus UNY" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Aktivitas Perkuliahan</div>
+                        <div class="gallery-meta">Kampus UNY Karangmalang</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="img/3.jpeg" alt="Foto bersama mahasiswa Kelas M Teknologi Informasi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Fun</div>
+                        <div class="gallery-meta">Solidaritas angkatan</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="img/4.jpeg" alt="Keseruan acara keakraban Teknologi Informasi Kelas M" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Kebersamaan & Sharing</div>
+                        <div class="gallery-meta">Momen keakraban kelas</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="img/5.png" alt="Kolaborasi tim software engineering" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Foto Bersama Kelas M</div>
+                        <div class="gallery-meta">Solidaritas Kelas</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="img/6.png" alt="Mahasiswa sedang coding di depan laptop" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Foto Bersama Kelas M</div>
+                        <div class="gallery-meta">Solidaritas Kelas</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Lightbox Pop-up -->
+            <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Pratinjau Foto">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" id="lightbox-close" aria-label="Tutup Pratinjau">&times;</button>
+                    <img id="lightbox-img" src="" alt="Pratinjau Foto Penuh">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: MEDIA SOSIAL -->
+        <section id="sosmed">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Konektivitas</span>
+                <h2 class="section-title">Media Sosial Resmi</h2>
+                <p class="section-subtitle">
+                    Ikuti kegiatan, konten kreatif, dan update terbaru seputar kelas kami melalui berbagai platform berikut.
+                </p>
+            </div>
+
+            <div class="sosmed-grid">
+                <a href="https://www.instagram.com/mtech.inf_?stkn=azMyejVybmI2M24x" target="_blank" rel="noopener noreferrer" class="sosmed-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sosmed-icon">📸</div>
+                    <div class="sosmed-info">
+                        <h3>Instagram</h3>
+                        <p>@mtech.inf_ • Galeri & Cerita Kegiatan</p>
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="sosmed-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sosmed-icon">🎵</div>
+                    <div class="sosmed-info">
+                        <h3>TikTok</h3>
+                        <p>@mtech.inf • Video Kreatif & Tren Seru</p>
+                    </div>
+                </a>
+
+                <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="sosmed-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="sosmed-icon">🎧</div>
+                    <div class="sosmed-info">
+                        <h3>Spotify Playlist</h3>
+                        <p>Playlist Musik Teman Belajar & Coding</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION 4: STRUKTUR ORGANISASI KELAS -->
+        <section id="struktur">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Organisasi</span>
+                <h2 class="section-title">Struktur Kelas & Penanggung Jawab</h2>
+                <p class="section-subtitle">
+                    Daftar koordinator dan Penanggung Jawab (PJ) mata kuliah yang siap membantu kelancaran proses perkuliahan.
+                </p>
+            </div>
+
+            <div class="struktur-wrapper">
+                <!-- Leader Card -->
+                <div class="leader-banner" data-aos="zoom-in" data-aos-duration="900">
+                    <span class="leader-badge">Koordinator Utama</span>
+                    <h3 class="leader-title">Faiza Ismail</h3>
+                    <p class="leader-subtitle">Ketua Koordinator Mahasiswa Kelas M — S1 Teknologi Informasi UNY</p>
+                </div>
+
+                <h3 class="pj-section-title" data-aos="fade-up">Penanggung Jawab (PJ) Mata Kuliah</h3>
+
+                <!-- Grid PJ Mata Kuliah -->
+                <div class="pj-grid">
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="50">
+                        <span class="pj-role">Koordinator Kelas M1</span>
+                        <span class="pj-name">Donatus Tanggu</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="pj-role">Koordinator Kelas M2</span>
+                        <span class="pj-name">Jonatan Mikhael Christiano</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="150">
+                        <span class="pj-role">Elektronika Digital</span>
+                        <span class="pj-name">Elang Jordan Pasha Buwana</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="pj-role">Pemrograman 1</span>
+                        <span class="pj-name">Muhammad Maftuh Ahnaf</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="250">
+                        <span class="pj-role">Fisika</span>
+                        <span class="pj-name">Gading Dasilva</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="300">
+                        <span class="pj-role">Logika</span>
+                        <span class="pj-name">Muhammad Rafa</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="350">
+                        <span class="pj-role">Bahasa Inggris Khusus</span>
+                        <span class="pj-name">Athaya Rakha Mumtaza</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="400">
+                        <span class="pj-role">Pendidikan Agama Islam</span>
+                        <span class="pj-name">Ilyas Said</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="450">
+                        <span class="pj-role">Kalkulus Diferensial</span>
+                        <span class="pj-name">Kirana Azhar Adeliana</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="500">
+                        <span class="pj-role">K3 & Lingkungan</span>
+                        <span class="pj-name">Rasya Abi Putra</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="550">
+                        <span class="pj-role">Praktik Eldig M1</span>
+                        <span class="pj-name">Riska Fitria Rahmawati</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="600">
+                        <span class="pj-role">Praktik Eldig M2</span>
+                        <span class="pj-name">Rania Sidny Wibowo</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="650">
+                        <span class="pj-role">Praktik Pemrograman 1 M1</span>
+                        <span class="pj-name">Donatus Tanggu</span>
+                    </div>
+                    <div class="pj-card" data-aos="fade-up" data-aos-delay="700">
+                        <span class="pj-role">Praktik Pemrograman 1 M2</span>
+                        <span class="pj-name">Affan Fiqih Masvaitela</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: FORUM KOMENTAR & CHAT KOMUNITAS (DILENGKAPI DATABASE) -->
+        <section id="komentar">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Interaksi Komunitas</span>
+                <h2 class="section-title">Kolom Komentar & Diskusi</h2>
+                <p class="section-subtitle">
+                    Sampaikan pendapat, saran, atau berinteraksi langsung melalui forum kelas ini. Data tersimpan secara aman dalam database.
+                </p>
+            </div>
+
+            <div class="forum-layout">
+                <!-- Sisi Kiri: Form Kirim Pesan -->
+                <div class="forum-form-card" data-aos="fade-right">
+                    <div class="form-header">
+                        <div class="form-icon">✍️</div>
+                        <div class="form-header-text">
+                            <h3>Tulis Komentar</h3>
+                            <p>Kirimkan saran & pendapat Anda</p>
+                        </div>
+                    </div>
+
+                    <div class="db-status-badge">
+                        <span class="status-dot"></span>
+                        <span>Database Client (IndexedDB) Aktif & Sinkron</span>
+                    </div>
+
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <label for="comment-name" class="form-label">Nama Anda</label>
+                            <input type="text" id="comment-name" class="form-input" placeholder="Masukkan nama atau panggilan..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment-role" class="form-label">Status / Peran</label>
+                            <select id="comment-role" class="form-select">
+                                <option value="Mahasiswa Kelas M">Mahasiswa Kelas M</option>
+                                <option value="Mahasiswa Lain">Mahasiswa UNY</option>
+                                <option value="Dosen / Pengajar">Dosen / Dosen Pengampu</option>
+                                <option value="Pengunjung">Pengunjung Umum</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment-category" class="form-label">Kategori Pesan</label>
+                            <select id="comment-category" class="form-select">
+                                <option value="diskusi">Diskusi Perkuliahan</option>
+                                <option value="pendapat">Pendapat & Kesan</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment-message" class="form-label">Pesan Komentar</label>
+                            <textarea id="comment-message" class="form-textarea" placeholder="Tuliskan komentar, pertanyaan, atau tanggapan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit-comment">
+                            <span>Kirimkan Komentar</span>
+                            <span>➤</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Sisi Kanan: Feed Daftar Komentar -->
+                <div class="forum-feed-card" data-aos="fade-left">
+                    <div class="feed-header">
+                        <div class="feed-title">
+                            <span>Komentar & Diskusi</span>
+                            <span class="comment-counter" id="comment-count">Memuat...</span>
+                        </div>
+
+                        <div class="feed-filter">
+                            <button class="filter-btn active" data-filter="all">Semua</button>
+                            <button class="filter-btn" data-filter="diskusi">Diskusi</button>
+                            <button class="filter-btn" data-filter="pendapat">Pendapat</button>
+                            <button class="filter-btn btn-clear-all" onclick="window.clearAllCommentsAction()" title="Hapus semua komentar dari database">🗑️ Bersihkan Semua</button>
+                        </div>
+                    </div>
+
+                    <!-- Container Daftar Komentar -->
+                    <div class="comments-list" id="comments-list">
+                        <!-- Komentar akan dimuat secara dinamis oleh script.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: MINI GAME TIC-TAC-TOE -->
+        <section id="game">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-pill">Hiburan & Santai</span>
+                <h2 class="section-title">Mini Game: Tic-Tac-Toe</h2>
+                <p class="section-subtitle">
+                    Lepaskan penat setelah praktikum coding dengan bermain mini-game sederhana bersama teman kelas!
+                </p>
+            </div>
+
+            <div class="game-card-wrapper" data-aos="zoom-in">
+                <div class="game-status-box" id="game-status" aria-live="polite">Giliran: Pemain X</div>
+                
+                <div class="game-board" id="board" role="grid" aria-label="Papan Tic-Tac-Toe">
+                    <div class="cell" data-index="0" role="button" tabindex="0" aria-label="Kotak 1"></div>
+                    <div class="cell" data-index="1" role="button" tabindex="0" aria-label="Kotak 2"></div>
+                    <div class="cell" data-index="2" role="button" tabindex="0" aria-label="Kotak 3"></div>
+                    <div class="cell" data-index="3" role="button" tabindex="0" aria-label="Kotak 4"></div>
+                    <div class="cell" data-index="4" role="button" tabindex="0" aria-label="Kotak 5"></div>
+                    <div class="cell" data-index="5" role="button" tabindex="0" aria-label="Kotak 6"></div>
+                    <div class="cell" data-index="6" role="button" tabindex="0" aria-label="Kotak 7"></div>
+                    <div class="cell" data-index="7" role="button" tabindex="0" aria-label="Kotak 8"></div>
+                    <div class="cell" data-index="8" role="button" tabindex="0" aria-label="Kotak 9"></div>
+                </div>
+
+                <button class="reset-btn" id="reset-game-btn">
+                    <span>↻</span>
+                    <span>Ulangi Permainan</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================
+         FOOTER RESMI (MODERN DUAL TONE)
+         ========================================= -->
+    <footer>
+        <div class="footer-top">
+            <!-- Kolom 1: Profil Kelas -->
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <div class="footer-logo">M</div>
+                    <span class="footer-brand-text">Kelas M • TI UNY</span>
+                </div>
+                <p class="footer-desc">
+                    Komunitas mahasiswa program studi S1 Teknologi Informasi Universitas Negeri Yogyakarta. Mengedepankan rekayasa perangkat lunak bermutu, kreativitas, dan persaudaraan erat.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/mtech.inf_?stkn=azMyejVybmI2M24x" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Instagram">📸</a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="TikTok">🎵</a>
+                    <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Spotify">🎧</a>
+                </div>
+            </div>
+
+            <!-- Kolom 2: Navigasi Cepat -->
+            <div class="footer-col">
+                <h4>Navigasi Halaman</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kelas</a></li>
+                    <li><a href="#pictures">Galeri Momen</a></li>
+                    <li><a href="#struktur">Struktur Organisasi</a></li>
+                    <li><a href="#komentar">Kolom Komentar</a></li>
+                    <li><a href="#game">Mini Game</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Kontak & Kampus -->
+            <div class="footer-col">
+                <h4>Informasi Kampus</h4>
+                <div class="footer-contact-item">
+                    <span>📍</span>
+                    <span>Kampus Karangmalang, Caturtunggal, Depok, Sleman, D.I. Yogyakarta 55281</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span>🎓</span>
+                    <span>Fakultas Teknik / Vokasi & TI — Universitas Negeri Yogyakarta</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span>✉️</span>
+                    <span>kelasm.ti.uny@gmail.com</span>
+                </div>
+            </div>
+
+            <!-- Kolom 4: Sistem & Database -->
+            <div class="footer-col">
+                <h4>Status Sistem</h4>
+                <p class="footer-desc">
+                    Website ini didesain dengan skema warna 2-tone (#145346 & Putih / Hitam) dan dilengkapi client-side IndexedDB NoSQL engine untuk penyimpanan pesan real-time.
+                </p>
+                <div class="db-status-badge" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: rgba(255,255,255,0.2);">
+                    <span class="status-dot"></span>
+                    <span>Sistem Komentar Aktif 100%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 S1 Teknologi Informasi Kelas M — Universitas Negeri Yogyakarta. All rights reserved.</p>
+            <a href="#hero" class="back-to-top" id="back-to-top">
+                <span>Kembali ke Atas</span>
+                <span>↑</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 80,
+            duration: 700,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+
+    <!-- Script Utama -->
+    <script src="script.js"></script>
+</body>
+</html>
